@@ -4,7 +4,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --buttons-bgc-color: #f5f4fa;
-  --cubic:cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 body {
   color: var(--primary-text-color);
@@ -29,6 +29,7 @@ img {
   display: block;
   max-width: 100%;
 }
+
 .container {
   width: 1200px;
   /* border: solid violet; */
@@ -95,6 +96,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  transition: color 250ms var(--cubic);
 }
 .nav-link.current::after {
   content: "";
@@ -156,6 +158,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   align-items: center;
+  transition: color 250ms var(--cubic), fill 250ms var(--cubic);
 }
 .contacts-link:hover,
 .contacts-link:focus {
@@ -195,6 +198,7 @@ img {
   border: 1px;
   border-radius: 4px;
   padding: 10px 32px;
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -327,8 +331,7 @@ img {
   color: #afb1b8;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms var(--cubic),
-    color 250ms var(--cubic) ;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic);
 }
 .team-item-icon:not(:last-child) {
   margin-right: 10px;
@@ -377,9 +380,7 @@ img {
   border: solid rgba(175, 177, 184, 1) 1px;
   padding: 16px 32px;
   border-radius: 4px;
-  transition: fill 250ms var(--cubic),
-  border-color 250ms var(--cubic)
-  ;
+  transition: fill 250ms var(--cubic), border-color 250ms var(--cubic);
 }
 .clients-item:not(:last-child) {
   margin-right: 30px;
@@ -407,10 +408,8 @@ img {
   border: 1px;
   border-radius: 4px;
   padding: 6px 22px;
-  transition: color 250ms var(--cubic),
-  background-color 250ms var(--cubic),
-  box-shadow 250ms var(--cubic)
-  ;
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
 }
 .nav-portfolio {
   justify-content: center;
@@ -443,6 +442,11 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
+  transition: box-shadow 250ms var(--cubic);
+}
+.portfolio-item-link{
+  text-decoration: none;
+  color: inherit;
 }
 .descript-portfolio {
   border: 1px solid #eeeeee;
@@ -530,6 +534,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  transition: color 250ms var(--cubic);
 }
 .contacts-link.active {
   color: rgba(255, 255, 255, 0.6);
