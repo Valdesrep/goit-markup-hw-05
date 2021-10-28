@@ -444,7 +444,7 @@ img {
   margin-bottom: 30px;
   transition: box-shadow 250ms var(--cubic);
 }
-.portfolio-item-link{
+.portfolio-item-link {
   text-decoration: none;
   color: inherit;
 }
