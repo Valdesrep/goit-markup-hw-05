@@ -444,6 +444,39 @@ img {
   margin-bottom: 30px;
   transition: box-shadow 250ms var(--cubic);
 }
+.portfolio-item-box {
+  position: relative;
+}
+.portfolio-pre-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.portfolio-box-text {
+  position: absolute;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  color: var(--primary-white-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 63px;
+  padding-bottom: 63px;
+  transform: translateY(100%);
+  transition: transform 250ms var(--cubic);
+}
+.portfolio-item-box:hover .portfolio-box-text {
+  opacity: 1;
+  transform: translateY(0%);
+}
 .portfolio-item-link {
   text-decoration: none;
   color: inherit;
@@ -453,6 +486,7 @@ img {
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
+  background-color: var(--primary-white-color);
 }
 .portfolio .title {
   color: var(--title-text-color);
@@ -471,7 +505,7 @@ img {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-/* Стили футер */
+/* Стили футер  */
 .footer {
   background-color: #2f303a;
   padding-bottom: 60px;
