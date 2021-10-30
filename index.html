@@ -70,7 +70,7 @@
           <h1 class="hero-title">
             Эффективные решения<br />для вашего бизнеса
           </h1>
-          <button type="button" class="hero-button hero">
+          <button type="button" class="hero-button hero" data-modal-open>
             Заказать услугу
           </button>
         </div>
@@ -191,32 +191,32 @@
                   <li class="team-item-icon">
                     <a href="" class="team-link-icon"
                       ><svg class="team-icon">
-                        <use
-                          href="./images/sprite.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
+                        <use href="./images/sprite.svg#icon-instagram"></use>
+                      </svg>
+                      ></a
+                    >
                   </li>
                   <li class="team-item-icon">
                     <a href="" class="team-link-icon"
                       ><svg class="team-icon">
-                        <use href="./images/sprite.svg#icon-twitter"></use></svg
-                    ></a>
+                        <use href="./images/sprite.svg#icon-twitter"></use></svg>
+                      </a>
                   </li>
                   <li class="team-item-icon">
                     <a href="" class="team-link-icon"
                       ><svg class="team-icon">
                         <use
                           href="./images/sprite.svg#icon-facebook"
-                        ></use></svg
-                    ></a>
+                        ></use></svg>
+                      </a>
                   </li>
                   <li class="team-item-icon">
                     <a href="" class="team-link-icon"
                       ><svg class="team-icon">
-                        <use
-                          href="./images/sprite.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        <use href="./images/sprite.svg#icon-linkedin"></use>
+                      </svg>
+                      ></a
+                    >
                   </li>
                 </ul>
               </div>
@@ -237,31 +237,35 @@
                     <a href="" class="team-link-icon"
                       ><svg class="team-icon">
                         <use
-                          href="./images/sprite.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
+                          href="./images/sprite.svg#icon-instagram"> <use>
+
+                          </svg>
+                          </a>
                   </li>
                   <li class="team-item-icon">
                     <a href="" class="team-link-icon"
                       ><svg class="team-icon">
-                        <use href="./images/sprite.svg#icon-twitter"></use></svg
-                    ></a>
+                        <use href="./images/sprite.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-item-icon">
                     <a href="" class="team-link-icon"
                       ><svg class="team-icon">
                         <use
                           href="./images/sprite.svg#icon-facebook"
-                        ></use></svg
-                    ></a>
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-item-icon">
                     <a href="" class="team-link-icon"
                       ><svg class="team-icon">
                         <use
                           href="./images/sprite.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -283,8 +287,9 @@
                       ><svg class="team-icon">
                         <use
                           href="./images/sprite.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-item-icon">
                     <a href="" class="team-link-icon"
@@ -296,17 +301,18 @@
                     <a href="" class="team-link-icon"
                       ><svg class="team-icon">
                         <use
-                          href="./images/sprite.svg#icon-facebook"
-                        ></use></svg
-                    ></a>
+                          href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-item-icon">
                     <a href="" class="team-link-icon"
                       ><svg class="team-icon">
                         <use
                           href="./images/sprite.svg#icon-linkedin"
-                        ></use></svg
-                    ></a>
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -328,8 +334,9 @@
                       ><svg class="team-icon">
                         <use
                           href="./images/sprite.svg#icon-instagram"
-                        ></use></svg
-                    ></a>
+                        ></use>
+                      </svg>
+                    </a>
                   </li>
                   <li class="team-item-icon">
                     <a href="" class="team-link-icon"
@@ -466,6 +473,13 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop"></div>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="hero-modal">
+        <button type="button" class="modal-buttton" data-modal-close><svg width="20px" height="20px" class="social-network-icon">
+          <use href="./images/sprite.svg#icon-close"></use></svg
+      ></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
