@@ -202,8 +202,8 @@ img {
 }
 .hero-button:hover,
 .hero-button:focus {
-  background-color: var(--primary-white-color);
-  color: var(--title-text-color);
+  background-color: #188CE8;
+  color: var(--primary-white-color);
 }
 .hero-title {
   color: var(--primary-white-color);
@@ -374,12 +374,19 @@ img {
   display: flex;
   justify-content: center;
 }
+.clients-item {
+  width: 170px;
+  height: 92px;
+}
 .clients-item-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   fill: rgba(175, 177, 184, 1);
   border: solid rgba(175, 177, 184, 1) 1px;
-  padding: 16px 32px;
   border-radius: 4px;
+  width: inherit;
+  height: inherit;
   transition: fill 250ms var(--cubic), border-color 250ms var(--cubic);
 }
 .clients-item:not(:last-child) {
@@ -466,7 +473,6 @@ img {
   height: 100%;
   top: 0px;
   left: 0px;
-  opacity: 0;
   padding-left: 24px;
   padding-right: 24px;
   padding-top: 63px;
@@ -476,7 +482,6 @@ img {
 }
 .portfolio-item-box:hover .portfolio-box-text,
 .portfolio-item-box:focus .portfolio-box-text {
-  opacity: 1;
   transform: translateY(0%);
 }
 .portfolio-item-link {
@@ -616,6 +621,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--primary-white-color);
 }
 .is-hidden {
   opacity: 0;
