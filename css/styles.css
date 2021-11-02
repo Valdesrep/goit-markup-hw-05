@@ -198,7 +198,7 @@ img {
   border-radius: 4px;
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+  transition: background-color 250ms var(--cubic);
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -526,7 +526,6 @@ img {
 .footer-container-box:not(:last-child) {
   margin-right: 70px;
 }
-
 .social-network {
   display: flex;
   justify-content: flex-start;
@@ -552,6 +551,7 @@ img {
   background-color: var(--accent-color);
 }
 .conect {
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -584,6 +584,41 @@ img {
 .footer .contacts-link:hover,
 .footer .contacts-link:focus {
   color: var(--accent-color);
+}
+
+.singer-form {
+  display: flex;
+}
+.singer-item {
+  width: 358px;
+  
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom:15px ;
+}
+.singer-button {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition:background-color 2503ms var(--cubic);
+}
+.singer-button:hover,
+.singer-button:focus {
+  background-color: #188CE8;
 }
 /* Стили модалки */
 .backdrop {
